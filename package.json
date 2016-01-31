@@ -38,5 +38,13 @@
   },
   "name": "geo-center",
   "description": "Centers vertices around a point.",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwwtyro/geo-center.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wwwtyro/geo-center/issues"
+  },
+  "homepage": "https://github.com/wwwtyro/geo-center#readme"
 }
