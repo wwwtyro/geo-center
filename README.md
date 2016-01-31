@@ -28,8 +28,6 @@ dragon.positions = center(dragon.positions, {
 var center = require('geo-center')
 ```
 
-### Constructor
-
 #### `var centeredPositions = center(positions, opts)`
 
 Returns a copy of `positions` centered around `opts.center`.
