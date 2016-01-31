@@ -1,7 +1,7 @@
 {
   "main": "index.js",
   "scripts": {
-    "build": "browserify -t glslify example/main.js > example/static/js/bundle.js",
+    "build": "browserify -t glslify example/main.js > example/bundle.js",
     "start": "budo --live example/main.js:example/static/js/bundle.js -- -t glslify",
     "standard": "standard",
     "deps": "dependency-check . --no-dev",
