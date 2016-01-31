@@ -1,0 +1,42 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -t glslify example/main.js > example/static/js/bundle.js",
+    "start": "budo --live example/main.js:example/static/js/bundle.js -- -t glslify",
+    "standard": "standard",
+    "deps": "dependency-check . --no-dev",
+    "deps-unused": "dependency-check . --unused --no-dev",
+    "deps-dev": "dependency-check . --entry example/main.js",
+    "deps-dev-unused": "dependency-check . --entry example/main.js --unused -i browserify -i budo -i dependency-check -i standard",
+    "test": "npm run standard && npm run deps && npm run deps-unused && npm run deps-dev && npm run deps-dev-unused"
+  },
+  "keywords": [
+    "stackgl"
+  ],
+  "author": "Rye Terrell <ryeterrell@ryeterrell.net> (http://wwwtyro.github.io)",
+  "license": "Unlicense",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "budo": "^7.1.0",
+    "dependency-check": "^2.5.1",
+    "gl-geometry": "^1.3.0",
+    "gl-shader": "^4.1.1",
+    "glslify": "^5.0.0",
+    "normals": "^1.0.1",
+    "standard": "^5.4.1",
+    "stanford-dragon": "^1.1.1",
+    "trackball-controller": "^1.1.1"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "geo-3d-transform-mat4": "^1.0.0",
+    "gl-mat4": "^1.1.4",
+    "lodash.defaultsdeep": "^3.10.0",
+    "vertices-bounding-box": "^1.0.0"
+  },
+  "name": "geo-center",
+  "description": "Centers vertices around a point.",
+  "version": "1.0.0"
+}
