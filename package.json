@@ -33,7 +33,6 @@
   "dependencies": {
     "geo-3d-transform-mat4": "^1.0.0",
     "gl-mat4": "^1.1.4",
-    "lodash.defaultsdeep": "^3.10.0",
     "vertices-bounding-box": "^1.0.0"
   },
   "name": "geo-center",
