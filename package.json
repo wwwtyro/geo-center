@@ -17,13 +17,13 @@
   "license": "Unlicense",
   "devDependencies": {
     "browserify": "^13.0.0",
-    "budo": "^7.1.0",
+    "budo": "^11.6.4",
     "dependency-check": "^2.5.1",
     "gl-geometry": "^1.3.0",
     "gl-shader": "^4.1.1",
-    "glslify": "^5.0.0",
+    "glslify": "^7.1.0",
     "normals": "^1.0.1",
-    "standard": "^5.4.1",
+    "standard": "^14.3.4",
     "stanford-dragon": "^1.1.1",
     "trackball-controller": "^1.1.1"
   },
@@ -37,7 +37,7 @@
   },
   "name": "geo-center",
   "description": "Centers vertices around a point.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wwwtyro/geo-center.git"
