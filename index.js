@@ -1,6 +1,5 @@
 'use strict'
 
-var defaults = require('lodash.defaultsdeep')
 var boundingBox = require('vertices-bounding-box')
 var mat4 = require('gl-mat4')
 var tform = require('geo-3d-transform-mat4')
@@ -8,10 +7,9 @@ var geoconv = require('geo-convert-position-format')
 
 module.exports = function center (positions, opts) {
   // Set some defaults.
-  opts = opts || {}
-  opts = defaults(opts, {
+  opts = Object.assign({
     center: [0, 0, 0]
-  })
+  }, opts || {});
 
   positions = geoconv.convert(positions, geoconv.ARRAY_OF_ARRAYS)
   // Calculate the bounding box.
